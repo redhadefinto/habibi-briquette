@@ -28,6 +28,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
+import burn from "../../assets/Burn.jpg";
 
 function App() {
   useEffect(() => {
@@ -170,16 +171,16 @@ function App() {
             <div
               className="w-full md:w-96 md:h-96 rounded-md overflow-hidden relative group"
               data-aos="zoom-in"
-              data-aos-delay="300">
+              data-aos-delay="500">
               <figure className="w-full h-full m-0">
                 <img
-                  src={briquette1}
-                  alt="Briquette 1"
+                  src={burn}
+                  alt="Briquette 3"
                   className="object-cover w-full h-full"
                 />
               </figure>
               <div className="absolute inset-0 bg-black bg-opacity-50 text-white flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span className="text-xl">SMOKELESS</span>
+                <span className="text-xl">Burning Time : 6 – 8 Hours</span>
               </div>
             </div>
             {/* Produk 2 */}
@@ -202,16 +203,16 @@ function App() {
             <div
               className="w-full md:w-96 md:h-96 rounded-md overflow-hidden relative group"
               data-aos="zoom-in"
-              data-aos-delay="500">
+              data-aos-delay="300">
               <figure className="w-full h-full m-0">
                 <img
-                  src={briquette3}
-                  alt="Briquette 3"
+                  src={briquette1}
+                  alt="Briquette 1"
                   className="object-cover w-full h-full"
                 />
               </figure>
               <div className="absolute inset-0 bg-black bg-opacity-50 text-white flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span className="text-xl">Burning Time : 6 – 8 Hours</span>
+                <span className="text-xl">SMOKELESS</span>
               </div>
             </div>
             {/* Produk 4 */}
