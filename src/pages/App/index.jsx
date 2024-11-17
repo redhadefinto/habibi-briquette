@@ -1,8 +1,8 @@
 import HeaderBase from "../../components/HeaderBase";
-import bgHero from "../../assets/bg-hero.jpg";
+// import bgHero from "../../assets/bg-hero.jpg";
 import briquette1 from "../../assets/briquette_1.jpg";
 import briquette2 from "../../assets/briquette_2.jpg";
-import briquette3 from "../../assets/briquette_3.jpg";
+// import briquette3 from "../../assets/briquette_3.jpg";
 import briquette4 from "../../assets/briquette_4.jpg";
 import pohon from "../../assets/pohon.png";
 import proses1 from "../../assets/prosses/1.jpg";
@@ -43,16 +43,16 @@ function App() {
         <HeaderBase />
         {/* HERO */}
         <section
-          className="hero h-screen relative"
+          className="hero h-screen relative flex-flex-col justify-end items-end pb-24 md:pb-0 md:justify-center md:items-center bg-cover bg-center bg-no-repeat md:mt-[5.5rem]"
           style={{
-            backgroundImage: `url(${bgHero})`,
+            backgroundImage: `url(${burn})`,
           }}>
           {/* Overlay untuk efek gelap */}
-          <div className="hero-overlay bg-opacity-60"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-60 w-full"></div>
 
           {/* Konten */}
-          <div className="hero-content text-neutral-content text-center">
-            <div className="max-w-4xl">
+          <div className="relative z-10 hero-content text-neutral-content text-center mt-36">
+            <div className="max-w-4xl ">
               {/* Heading dengan animasi */}
               <h1
                 className="mb-5 text-3xl md:text-5xl font-bold text-green-200"

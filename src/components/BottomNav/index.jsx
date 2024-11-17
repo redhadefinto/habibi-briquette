@@ -28,12 +28,12 @@ function BottomNav() {
   };
 
   return (
-    <div className="sticky bottom-0 w-full bg-green-500 z-50 md:hidden">
+    <div className="sticky bottom-0 w-full bg-amber-900 z-50 md:hidden">
       <div className="flex justify-around items-center py-3">
         {/* Home Icon */}
         <div
           className={`cursor-pointer text-2xl ${
-            activeTab === 0 ? "text-amber-900" : "text-white"
+            activeTab === 0 ? "text-green-500" : "text-white"
           } transition-colors duration-300`}
           onClick={() => handleTabClick(0, "/")}>
           <FaHome />
@@ -42,7 +42,7 @@ function BottomNav() {
         {/* Shop Icon */}
         <div
           className={`cursor-pointer text-2xl ${
-            activeTab === 1 ? "text-amber-900" : "text-white"
+            activeTab === 1 ? "text-green-500" : "text-white"
           } transition-colors duration-300`}
           onClick={() => handleTabClick(1, "/product")}>
           <CiShop />
@@ -51,7 +51,7 @@ function BottomNav() {
         {/* Alert Icon */}
         <div
           className={`cursor-pointer text-2xl ${
-            activeTab === 2 ? "text-amber-900" : "text-white"
+            activeTab === 2 ? "text-green-500" : "text-white"
           } transition-colors duration-300`}
           onClick={() => handleTabClick(2, "/about")}>
           <FaExclamationCircle />
@@ -60,7 +60,7 @@ function BottomNav() {
         {/* Phone Icon */}
         <div
           className={`cursor-pointer text-2xl ${
-            activeTab === 3 ? "text-amber-900" : "text-white"
+            activeTab === 3 ? "text-green-500" : "text-white"
           } transition-colors duration-300`}
           onClick={() => handleTabClick(3, "/contact")}>
           <FaPhoneSquare />
