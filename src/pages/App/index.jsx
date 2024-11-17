@@ -417,8 +417,13 @@ function App() {
               }>
               <FaWhatsappSquare className="text-7xl hover:text-green-500 hover:cursor-pointer hover:scale-110 hover:transition-transform hover:delay-150" />
             </Link>
-            <MdOutgoingMail className="text-7xl hover:text-red-300 hover:cursor-pointer hover:scale-110 hover:transition-transform hover:delay-150" />
+            <Link to={"mailto:habibibriquette@gmail.com"}>
+              <MdOutgoingMail className="text-7xl hover:text-red-300 hover:cursor-pointer hover:scale-110 hover:transition-transform hover:delay-150" />
+            </Link>
           </div>
+          <h3 className="text-center font-bold text-2xl md:text-5xl text-amber-800">
+            habibibriquette@gmail.com
+          </h3>
           <div className="flex flex-col items-center gap-12 my-12">
             <h3 className="text-3xl font-bold">FAQ & MOQ</h3>
             <div className=" w-full md:w-[50%] flex flex-col gap-8">

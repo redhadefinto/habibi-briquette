@@ -49,7 +49,9 @@ function Footer() {
             }>
             <FaWhatsappSquare className="text-5xl hover:text-green-500 hover:cursor-pointer hover:scale-110 hover:transition-transform hover:delay-150" />
           </Link>
-          <MdOutgoingMail className="text-5xl hover:text-red-300 hover:cursor-pointer hover:scale-110 hover:transition-transform hover:delay-150" />
+          <Link to={"mailto:habibibriquette@gmail.com"}>
+            <MdOutgoingMail className="text-5xl hover:text-red-300 hover:cursor-pointer hover:scale-110 hover:transition-transform hover:delay-150" />
+          </Link>
         </div>
       </nav>
     </footer>

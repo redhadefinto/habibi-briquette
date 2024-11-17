@@ -96,7 +96,9 @@ function Product() {
               }>
               <FaWhatsappSquare className="text-2xl md:text-5xl text-white hover:text-green-500 hover:cursor-pointer hover:scale-110 hover:transition-transform hover:delay-150" />
             </Link>
-            <MdOutgoingMail className="text-2xl md:text-5xl text-white hover:text-red-300 hover:cursor-pointer hover:scale-110 hover:transition-transform hover:delay-150" />
+            <Link to={"mailto:habibibriquette@gmail.com"}>
+              <MdOutgoingMail className="text-5xl text-white hover:text-red-300 hover:cursor-pointer hover:scale-110 hover:transition-transform hover:delay-150" />
+            </Link>
           </div>
         </div>
       </section>

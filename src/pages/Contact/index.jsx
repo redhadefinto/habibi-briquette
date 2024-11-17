@@ -35,7 +35,9 @@ function Contact() {
               }>
               <FaWhatsappSquare className="text-5xl text-white hover:text-green-500 hover:cursor-pointer hover:scale-110 hover:transition-transform hover:delay-150" />
             </Link>
-            <MdOutgoingMail className="text-5xl text-white hover:text-red-300 hover:cursor-pointer hover:scale-110 hover:transition-transform hover:delay-150" />
+            <Link to={"mailto:habibibriquette@gmail.com"}>
+              <MdOutgoingMail className="text-5xl text-white hover:text-red-300 hover:cursor-pointer hover:scale-110 hover:transition-transform hover:delay-150" />
+            </Link>
           </div>
         </div>
       </section>
@@ -73,7 +75,7 @@ function Contact() {
 
           {/* Email Button */}
           <a
-            href="mailto:someone@example.com"
+            href="mailto:habibibriquette@gmail.com"
             className="flex items-center justify-center w-full md:w-auto px-6 py-3 bg-gradient-to-r from-red-400 to-red-600 text-white text-xl rounded-full shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 transform">
             <MdOutgoingMail className="mr-3 text-3xl" />
             Email
