@@ -354,6 +354,11 @@ function App() {
                 span: "col-span-4 md:col-span-1",
               },
               {
+                src: proses13,
+                text: "Ready To Ship",
+                span: "col-span-4 md:col-span-1",
+              },
+              {
                 src: proses11,
                 text: "Packing",
                 span: "col-span-4 md:col-span-1",
@@ -361,11 +366,6 @@ function App() {
               {
                 src: proses12,
                 text: "Packing",
-                span: "col-span-4 md:col-span-1",
-              },
-              {
-                src: proses13,
-                text: "Ready To Ship",
                 span: "col-span-4 md:col-span-1",
               },
               {
