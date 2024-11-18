@@ -28,7 +28,7 @@ function BottomNav() {
   };
 
   return (
-    <div className="sticky bottom-0 w-full bg-amber-900 z-50 md:hidden">
+    <div className="sticky bottom-0 w-full bg-amber-900 z-[9999999] md:hidden">
       <div className="flex justify-around items-center py-3">
         {/* Home Icon */}
         <div

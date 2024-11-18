@@ -5,6 +5,23 @@ import { FaInstagram, FaLinkedin, FaWhatsappSquare } from "react-icons/fa";
 import { MdOutgoingMail } from "react-icons/md";
 import ButtomNav from "../../components/BottomNav";
 import { Link } from "react-router-dom";
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Popup,
+  useMapEvents,
+} from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+
+const ClickHandler = () => {
+  useMapEvents({
+    click(e) {
+      console.log("Peta diklik pada:", e.latlng); // Menampilkan koordinat lokasi klik
+    },
+  });
+  return null; // Komponen ini hanya untuk menangani event, jadi tidak perlu render apa pun
+};
 
 function Contact() {
   return (
@@ -82,6 +99,27 @@ function Contact() {
           </a>
         </div>
       </section>
+
+      <div className="w-full h-screen flex justify-center items-center border-2 border-red-600">
+        <div className="w-full h-[50%] md:w-[80%] md:h-[80%] px-4 py-4 md:py-12">
+          <MapContainer
+            center={[-0.9111958414504339, 100.36800164950732]} // Koordinat pusat awal peta
+            zoom={14} // Tingkat zoom awal
+            style={{ height: "100%", width: "100%" }}>
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" // URL layer ubin dari OpenStreetMap
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            />
+            <Marker position={[-0.9111958414504339, 100.36800164950732]}>
+              <Popup>
+                This is the center marker! <br /> Click anywhere on the map to
+                see coordinates in the console.
+              </Popup>
+            </Marker>
+            <ClickHandler /> {/* Menangani event klik pada peta */}
+          </MapContainer>
+        </div>
+      </div>
 
       <Footer />
       <ButtomNav />
