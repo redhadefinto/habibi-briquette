@@ -13,7 +13,7 @@ function HeaderBase({ title }) {
 
   return (
     <>
-      <header className="fixed w-full top-0 bg-white border-b-2 border-solid z-50 font-rubik px-6 md:px-8 lg:px-20">
+      <header className="fixed w-full top-0 bg-white border-b-2 border-solid z-[9999999] font-rubik px-6 md:px-8 lg:px-20">
         <div className="flex py-4 lg:py-6">
           <section className="flex-1">
             <div>
